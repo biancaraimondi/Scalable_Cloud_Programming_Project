@@ -1,6 +1,7 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation
 
+
 object Main {
   def main(args: Array[String]): Unit = {
     val spark: SparkSession = SparkSession.builder()
@@ -13,11 +14,11 @@ object Main {
     val rdd = rddFromFile.map(f => {
       f.split(",")
     })
-
-    val labelColumn = 0
+    val labelColumn = 7
     val colName = rdd.first()
-    //    colName.foreach(println)
+    colName.foreach(println)
     val data = rdd.filter(line => !(line.sameElements(colName)))
+
 
     //get every possible label
     val allLabels = data.map(row => row(labelColumn)).distinct().collect()
@@ -27,10 +28,11 @@ object Main {
     //split into test and train set
     val Array(trainSet, testSet) = data.randomSplit(Array(0.7,0.3))
 
-    val mappedLabel = data.map(row => {
+    val mappedLabel = trainSet.map(row => {
       val labelRow = "" + row(labelColumn)
       (labelRow,1)
     })
+
 
     val reducedLabel = mappedLabel.reduceByKey(_+_).collectAsMap()
 
@@ -40,7 +42,7 @@ object Main {
       val label = row(labelColumn)
       //si potrebbe usare row.map ma viene mappata anche la colonna della label
       //PROBLEMA: come ricavare il nome della colonna che stiamo legendo?
-      for (i <- 7 until 19){
+      for (i <- 3 until 7){
         if(i != labelColumn){
           val attributeName = colName(i)
           val attributeValue: Double = row(i).toDouble
@@ -67,13 +69,14 @@ object Main {
         val currentLabel = label
         val freqCurrentLabel:Int = reducedLabel.getOrElse(label, 0)
         var probRowLabel:Double = freqCurrentLabel
-        for (i<-7 until 19){
+        for (i<-3 until 7){
           if(i != labelColumn){
             val key = colName(i)+"-"+currentLabel
             val mean = reducedAttribute.getOrElse(key, (0.0,0.0))._1
             val stdev = reducedAttribute.getOrElse(key, (0.0, 0.0))._2
             val x = row(i).toDouble
-            val p = (1.0/stdev * scala.math.sqrt(2*scala.math.Pi) * scala.math.exp(-0.5*((x-mean)/stdev)*scala.math.exp(2)))
+            val p = (1.0/(stdev * scala.math.sqrt(2*scala.math.Pi))
+              * scala.math.exp(-0.5*scala.math.pow((x-mean)/stdev,2)))
             probRowLabel *= p
           }
         }
