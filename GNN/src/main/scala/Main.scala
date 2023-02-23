@@ -37,7 +37,7 @@ object Main {
     val reducedLabel = mappedLabel.reduceByKey(_+_).collectAsMap()
 
     //mean and std deviation
-    val mappedAttribute = data.flatMap(row => {
+    val mappedAttribute = trainSet.flatMap(row => {
       var seq = Seq.empty[(String, Double)]
       val label = row(labelColumn)
       //si potrebbe usare row.map ma viene mappata anche la colonna della label
