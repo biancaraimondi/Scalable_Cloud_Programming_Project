@@ -1,4 +1,4 @@
-import classifiera.{GaussianNB, MultinomialNB}
+import classifiers.{GaussianNB, MultinomialNB}
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.tree.DecisionTree

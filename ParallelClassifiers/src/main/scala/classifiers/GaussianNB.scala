@@ -1,4 +1,4 @@
-package classifiera
+package classifiers
 
 import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation
 import org.apache.spark.mllib.regression.LabeledPoint

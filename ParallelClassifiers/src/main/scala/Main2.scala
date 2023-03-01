@@ -1,4 +1,4 @@
-import classifiera.PKNNClassifier
+import classifiers.PKNNClassifier
 import org.apache.spark.sql._
 
 object Main2 {
