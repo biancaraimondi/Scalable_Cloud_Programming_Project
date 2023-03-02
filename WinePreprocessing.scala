@@ -1,12 +1,14 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.lit
 
-class WinePreprocessing {
+object WinePreprocessing {
   def main(args: Array[String]): Unit = {
 
-    val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExamples.com")
+    // Create a local SparkSession
+    val spark = SparkSession
+      .builder()
+      .master("local[*]")
+      .appName("Preprocessing")
       .getOrCreate()
 
     // get data from "./data/winequality-red.csv" and "./data/winequality-white.csv"
@@ -27,19 +29,15 @@ class WinePreprocessing {
     // merge the two dataframes
     val wine = red_wine_with_color.union(white_wine_with_color)
 
-    // remove " and / from column names
-    var wine_cleaned = wine.columns.foldLeft(wine)((df, c) => df.withColumnRenamed(c, c.replaceAll("\"", "")))
-
     // write the merged dataframe to a CSV file
-    wine_cleaned = wine_cleaned.coalesce(1)
-    wine_cleaned = wine_cleaned.columns.foldLeft(wine_cleaned)((df, c) => df.withColumnRenamed(c, c.replaceAll(" ", "")))
+    val wine_coalesce = wine.coalesce(1)
 
-
-    wine_cleaned.write
-      .option("header", "true") // write header row
-      .option("delimiter", ",") // use comma as separator
-      .mode("overwrite") // overwrite the file if it already exists
+    // save the merged dataframe to "./data/wine.csv"
+    wine_coalesce.write
+      .option("header", "true")
+      .option("inferSchema", "true")
+      .mode("overwrite")
+      .option("delimiter", ",")
       .csv("src/main/data/wine.csv")
-
   }
 }
