@@ -1,5 +1,7 @@
-import classifiers.PKNNClassifier
+package org.unibo.scp
+
 import org.apache.spark.sql._
+import classifiers._
 
 object Main2 {
   def main(args: Array[String]): Unit = {
@@ -44,10 +46,6 @@ object Main2 {
     val accuracy = classifier.score(yTest, yPred)
 
     println(s"Accuracy: $accuracy")
-    // For debugging: port 4040
-    // while (true) {
-    //
-    // }
   }
 
   private def formatRow(row: Row) = {

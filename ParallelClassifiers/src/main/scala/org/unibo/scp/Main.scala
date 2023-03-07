@@ -1,9 +1,12 @@
-import classifiers.{GaussianNB, MultinomialNB}
+package org.unibo.scp
+
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.tree.DecisionTree
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
+
+import classifiers._
 
 object Main {
   def main(args: Array[String]): Unit = {
@@ -52,9 +55,5 @@ object Main {
 
     val testErr = labelAndPreds.filter(r => r._1 != r._2).count().toDouble / testSet.count()
     println("DT ACCURACY ="+(1-testErr))
-
-    while(true){
-
-    }
   }
 }

@@ -1,4 +1,4 @@
-package classifiers
+package org.unibo.scp.classifiers
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
@@ -40,7 +40,7 @@ class MultinomialNB(spark: SparkSession) extends Serializable{
 
   }
 
-  def predict(row: Array[String]): Unit ={
+  def predict(row: Array[String]) ={
     val probVector = allLabels.map(label => {
       val currentLabel = label
       val freqCurrentLabel:Int = probMap.getOrElse(currentLabel,0)
@@ -58,14 +58,15 @@ class MultinomialNB(spark: SparkSession) extends Serializable{
       (label, probRowLabel)
     })
     val maxProb = probVector.maxBy(_._2)._1
-    return maxProb
+    maxProb
   }
 
 
 
-  def score(rdd: RDD[Array[String]]): Unit ={
+  def score(rdd: RDD[Array[String]]) ={
     val testSet = rdd.filter(line => !line.sameElements(colName))
-    val score = testSet.map(row => {
+
+    testSet.map(row => {
       val maxProb = predict(row)
       val correctLabel = ""+row(labelColumn)
       (correctLabel+","+maxProb+","+correctLabel.equals(maxProb),1)

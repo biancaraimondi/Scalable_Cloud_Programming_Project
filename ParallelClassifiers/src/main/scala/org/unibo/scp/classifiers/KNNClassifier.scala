@@ -1,4 +1,4 @@
-package classifiers
+package org.unibo.scp.classifiers
 
 class KNNClassifier(val k: Int = 5) {
   private var xTrain: Array[Array[Double]] = _
