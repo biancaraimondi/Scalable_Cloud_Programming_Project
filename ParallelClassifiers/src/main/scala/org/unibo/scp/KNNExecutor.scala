@@ -3,10 +3,10 @@ package org.unibo.scp
 import org.apache.spark.sql._
 import classifiers._
 
-object Main2 {
+object KNNExecutor {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
-      .appName("KNNClassifier")
+      .appName("Parallel KNN App")
       .master("local[*]")
       .getOrCreate()
 
