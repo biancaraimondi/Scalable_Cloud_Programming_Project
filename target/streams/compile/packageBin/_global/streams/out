@@ -1,0 +1,35 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/parallelclassifiers_2.12-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/GNBExecutor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/GNBExecutor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/GNBExecutor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/GNBExecutor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/KNNExecutor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/KNNExecutor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/KNNExecutor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/KNNExecutor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/classifiers[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/classifiers[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/classifiers/GaussianNB.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/classifiers/GaussianNB.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/classifiers/KNNClassifier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/classifiers/KNNClassifier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/classifiers/KNNClassifier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/classifiers/KNNClassifier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/classifiers/KNNUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/classifiers/KNNUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/classifiers/KNNUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/classifiers/KNNUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/classifiers/MultinomialNB.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/classifiers/MultinomialNB.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/classifiers/PKNNClassifier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/classifiers/PKNNClassifier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/unibo/scp/classifiers/PKNNClassifier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/target/scala-2.12/classes/org/unibo/scp/classifiers/PKNNClassifier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

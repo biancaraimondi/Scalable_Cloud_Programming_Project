@@ -1,0 +1,126 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.8.2 (Amazon.com Inc. Java 11.0.18)
+[debug]       Load.loadUnit: plugins took 119.794848ms
+[debug]       Load.loadUnit: defsScala took 0.499757ms
+[debug] [Loading] Scanning directory /home/nicolopizzo/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/nicolopizzo/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 19.68849 ms
+[debug]           Load.resolveProject(global-plugins) took 55.189424ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/nicolopizzo/.sbt/1.0/plugins, plugins: List(<none>))) took 108.983522ms
+[debug] [Loading] Done in /home/nicolopizzo/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 131.657484ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.298293ms
+[debug]     Load.loadUnit(file:/home/nicolopizzo/.sbt/1.0/plugins/, ...) took 263.764383ms
+[debug]   Load.apply: load took 466.294194ms
+[debug]   Load.apply: resolveProjects took 6.612605ms
+[debug]   Load.apply: finalTransforms took 54.640696ms
+[debug]   Load.apply: config.delegates took 5.767638ms
+[debug]   Load.apply: Def.make(settings)... took 336.150495ms
+[debug]   Load.apply: structureIndex took 84.877025ms
+[debug]   Load.apply: mkStreams took 1.902591ms
+[info] loading global plugins from /home/nicolopizzo/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 1893.531571ms
+[debug]           Load.loadUnit: plugins took 13.393292ms
+[debug]           Load.loadUnit: defsScala took 0.005254ms
+[debug] [Loading] Scanning directory /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/project
+[debug]             Load.loadUnit: mkEval took 7.044818ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.704968 ms
+[info] loading settings for project parallelclassifiers-build from plugins.sbt ...
+[debug]               Load.resolveProject(parallelclassifiers-build) took 2.092309ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id parallelclassifiers-build, base: /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/project, plugins: List(<none>))) took 4.329291ms
+[debug] [Loading] Done in /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/project, returning: (parallelclassifiers-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 110.855699ms
+[debug]           Load.loadUnit: cleanEvalClasses took 2.833942ms
+[debug]         Load.loadUnit(file:/home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/project/, ...) took 127.890802ms
+[debug]       Load.apply: load took 129.206864ms
+[debug]       Load.apply: resolveProjects took 0.167346ms
+[debug]       Load.apply: finalTransforms took 10.509692ms
+[debug]       Load.apply: config.delegates took 0.342767ms
+[debug]       Load.apply: Def.make(settings)... took 73.434077ms
+[debug]       Load.apply: structureIndex took 22.282216ms
+[debug]       Load.apply: mkStreams took 0.002975ms
+[info] loading project definition from /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 449.318022ms
+[debug]     Load.loadUnit: defsScala took 0.002196ms
+[debug] [Loading] Scanning directory /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers
+[debug]       Load.loadUnit: mkEval took 0.185388ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbtassembly.AssemblyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbtassembly.AssemblyPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbtassembly.AssemblyPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.711914 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 18.793715ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers, plugins: List(<none>))) took 21.473611ms
+[debug] [Loading] Done in /home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 61.366935ms
+[debug]     Load.loadUnit: cleanEvalClasses took 1.044761ms
+[debug]   Load.loadUnit(file:/home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/, ...) took 512.255263ms
+[debug] Load.apply: load took 513.454721ms
+[debug] Load.apply: resolveProjects took 0.095346ms
+[debug] Load.apply: finalTransforms took 5.245506ms
+[debug] Load.apply: config.delegates took 0.283955ms
+[debug] Load.apply: Def.make(settings)... took 77.902424ms
+[debug] Load.apply: structureIndex took 24.432878ms
+[debug] Load.apply: mkStreams took 0.003883ms
+[info] set current project to ParallelClassifiers (in build file:/home/nicolopizzo/Documents/Projects/scp-project/ParallelClassifiers/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/nicolopizzo/.sbt/1.0/server/def694c307f295be6d89/sock
+[debug] Writing bsp connection file
+[info] started sbt server
